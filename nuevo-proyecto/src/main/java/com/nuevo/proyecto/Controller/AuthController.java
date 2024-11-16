@@ -11,6 +11,18 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.core.Authentication;
+import org.springframework.http.HttpHeaders;
+
+import com.nuevo.proyecto.Model.Producto;
+import com.nuevo.proyecto.Service.ProductoService;
+import com.nuevo.proyecto.Service.RolService;
+import com.nuevo.proyecto.Service.UserService;
+import com.nuevo.proyecto.dto.JwtResponseDto;
+import com.nuevo.proyecto.dto.LoginDto;
+import com.nuevo.proyecto.dto.RegisterDto;
+import com.nuevo.proyecto.dto.UserDto;
+import com.nuevo.proyecto.security.JwtGenerator;
 
 @RestController
 @RequestMapping("/api")
