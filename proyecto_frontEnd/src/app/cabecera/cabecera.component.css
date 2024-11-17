@@ -16,7 +16,7 @@ body {
     list-style: none;
     position: relative;
     background-color: var(--color2);
-    padding: 12px 20px;
+    padding: 15px 20px;
 }
 .logo img {width: 40px;}
 .menu {display: flex;}
@@ -28,7 +28,7 @@ body {
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
-    text-transform: uppercase;
+
 }
 .menu li a::after {
     content: "";
