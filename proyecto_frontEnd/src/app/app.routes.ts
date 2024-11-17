@@ -30,8 +30,16 @@ export const routes: Routes = [
    canActivate:[authenticatedGuard]
   },
   {
+   path:'Registrar',
+   loadComponent:()=> import('./Pages/registrar/registrar.component'),
+  },
+  {
+   path:'home',
+   loadComponent:()=> import('./Pages/home/home.component')
+  },
+  {
    path:'**',
-   redirectTo:'dashboard'
+   redirectTo:'home'
   }
 
 ];
