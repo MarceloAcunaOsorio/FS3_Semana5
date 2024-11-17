@@ -2,18 +2,18 @@ package com.nuevo.proyecto.dto;
 
 public class JwtResponseDto {
     
-    private String accessToken;
+    private String token;
     public JwtResponseDto(String accessToken){
-        this.accessToken = accessToken;
+        this.token = accessToken;
     }
 
     public JwtResponseDto(){}
 
-    public String getAccessToken() {
-        return accessToken;
+    public String gettoken() {
+        return token;
     }
 
-    public void setAccessToken(String accessToken) {
-        this.accessToken = accessToken;
+    public void setToken(String token) {
+        this.token = token;
     }
 }
