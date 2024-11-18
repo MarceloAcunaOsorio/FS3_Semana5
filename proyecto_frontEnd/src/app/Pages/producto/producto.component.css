@@ -1,7 +1,6 @@
-#categorias-container{
-    margin: 20px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 20px 0;
-  }
+.card{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    margin: 5%;
+}

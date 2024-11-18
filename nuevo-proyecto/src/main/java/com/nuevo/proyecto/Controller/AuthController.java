@@ -27,6 +27,7 @@ import com.nuevo.proyecto.security.JwtGenerator;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AuthController {
     
     @Autowired
@@ -42,7 +43,6 @@ public class AuthController {
     private ProductoService productoService;
 
 
-   @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/login")
     public ResponseEntity<JwtResponseDto> login(@RequestBody LoginDto loginDto) {
         return ResponseEntity.ok(userService.login(loginDto));
@@ -63,11 +63,11 @@ public class AuthController {
         JwtResponseDto jwtRefresh = new JwtResponseDto(token);
         return new ResponseEntity<JwtResponseDto>(jwtRefresh, HttpStatus.OK);
     }
-
     @GetMapping("/logued")
     public ResponseEntity<UserDto> getLoguedUser(@RequestHeader HttpHeaders headers){
         return new ResponseEntity<>(userService.getLoguedUser(headers), HttpStatus.OK);
     }
+
 
     @GetMapping("/home")
     public List<Producto>getAllProductos(){

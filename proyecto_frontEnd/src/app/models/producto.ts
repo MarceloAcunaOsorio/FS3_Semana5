@@ -1,10 +1,10 @@
 
 export interface producto{
-    IdProducto: number;
-    NombreProducto: string;
-    DescripcionProducto: string;
-    ModeloProducto: string;
-    MarcaProducto: string;
-    TallaProducto: number;
-    ColorProducto:string;
+    _IdProducto: number;
+    _NombreProducto: string;
+    _DescripcionProducto: string;
+    _ModeloProducto: string;
+    _MarcaProducto: string;
+    _TallaProducto: number;
+    _ColorProducto:string;
 }
